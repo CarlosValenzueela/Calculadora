@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvCalculadora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Calculadora"
+        android:textColor="#D60F0F"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCalculadora" />
+
+    <TextView
+        android:id="@+id/tvConsola"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvResultado"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultado" />
+
+    <Button
+        android:id="@+id/btnNumero7"
+        android:layout_width="70dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/black"
+        android:text="7"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnNumero8"
+        app:layout_constraintEnd_toStartOf="@+id/btnNumero8"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNumero8"
+        android:layout_width="70dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/black"
+        android:text="8"
+        app:layout_constraintEnd_toStartOf="@+id/btnNumero9"
+        app:layout_constraintStart_toEndOf="@+id/btnNumero7"
+        app:layout_constraintTop_toBottomOf="@+id/tvConsola" />
+
+    <Button
+        android:id="@+id/btnNumero9"
+        android:layout_width="70dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="22dp"
+        android:backgroundTint="@color/black"
+        android:text="9"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnNumero8"
+        app:layout_constraintEnd_toStartOf="@+id/btnSuma"
+        app:layout_constraintStart_toEndOf="@+id/btnNumero8" />
+
+    <Button
+        android:id="@+id/btnSuma"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="118dp"
+        android:backgroundTint="@color/orange"
+        android:text="+"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMultiplicacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnNumero9"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultado"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <Button
+        android:id="@+id/btnNumero4"
+        android:layout_width="70dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/black"
+        android:text="4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnNumero5"
+        app:layout_constraintEnd_toStartOf="@+id/btnNumero5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNumero5"
+        android:layout_width="70dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/black"
+        android:text="5"
+        app:layout_constraintEnd_toStartOf="@+id/btnNumero6"
+        app:layout_constraintStart_toEndOf="@+id/btnNumero4"
+        app:layout_constraintTop_toBottomOf="@+id/btnNumero8" />
+
+    <Button
+        android:id="@+id/btnNumero6"
+        android:layout_width="70dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="22dp"
+        android:backgroundTint="@color/black"
+        android:text="6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnNumero5"
+        app:layout_constraintEnd_toStartOf="@+id/btnResta"
+        app:layout_constraintStart_toEndOf="@+id/btnNumero5" />
+
+    <Button
+        android:id="@+id/btnResta"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/orange"
+        android:text="-"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnNumero6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnNumero6" />
+
+    <Button
+        android:id="@+id/btnNumero1"
+        android:layout_width="70dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/black"
+        android:text="1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnNumero2"
+        app:layout_constraintEnd_toStartOf="@+id/btnNumero2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNumero2"
+        android:layout_width="70dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/black"
+        android:text="2"
+        app:layout_constraintEnd_toStartOf="@+id/btnNumero3"
+        app:layout_constraintStart_toEndOf="@+id/btnNumero1"
+        app:layout_constraintTop_toBottomOf="@+id/btnNumero5" />
+
+    <Button
+        android:id="@+id/btnNumero3"
+        android:layout_width="70dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="22dp"
+        android:backgroundTint="@color/black"
+        android:text="3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnNumero2"
+        app:layout_constraintEnd_toStartOf="@+id/btnMultiplicacion"
+        app:layout_constraintStart_toEndOf="@+id/btnNumero2" />
+
+    <Button
+        android:id="@+id/btnMultiplicacion"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="82dp"
+        android:backgroundTint="@color/orange"
+        android:text="*"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDivision"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnNumero3"
+        app:layout_constraintTop_toTopOf="@+id/btnNumero6" />
+
+    <Button
+        android:id="@+id/btnNumero0"
+        android:layout_width="70dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/black"
+        android:text="0"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnResultado"
+        app:layout_constraintEnd_toStartOf="@+id/btnResultado"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnResultado"
+        android:layout_width="70dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/gray"
+        android:text="="
+        app:layout_constraintEnd_toStartOf="@+id/btnLimpiar"
+        app:layout_constraintStart_toEndOf="@+id/btnNumero0"
+        app:layout_constraintTop_toBottomOf="@+id/btnNumero2" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="70dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="22dp"
+        android:backgroundTint="@color/gray"
+        android:text="C"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnResultado"
+        app:layout_constraintEnd_toStartOf="@+id/btnDivision"
+        app:layout_constraintStart_toEndOf="@+id/btnResultado" />
+
+    <Button
+        android:id="@+id/btnDivision"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/orange"
+        android:text="/"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnLimpiar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnLimpiar" />
+
+    <TextView
+        android:id="@+id/tvAviso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="44dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#D60F0F"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
